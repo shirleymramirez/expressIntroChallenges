@@ -16,7 +16,7 @@ app.post('/create/:name', (req, res) => {
     id: 1,
     name: req.params.name
   }
-  res.json(obj);
+  res.send(obj);
 })
 
 app.get('/', (req, res) => {
